@@ -7,8 +7,8 @@ use strict;
 use Kisarazu;
 my $class = "Kisarazu";
     
-my ( $kaishamei, $tenmei, $shachou, $juusho, $denwa, $bank ) =
-    map {$class->$_} qw(kaishamei tenmei shachou juusho denwa bank);
+my ( $kaishamei, $tenmei, $shachou, $juusho, $denwa, $bank, $web) =
+    map {$class->$_} qw(kaishamei tenmei shachou juusho denwa bank web);
 
 print <<EOD
 
@@ -25,6 +25,7 @@ $kaishamei $tenmei
 $denwa
 kouza: $bank
 shatyou: $shachou
+web: $web
 
 
 EOD

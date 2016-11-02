@@ -11,5 +11,6 @@ sub shachou { "こもじゅん" };
 sub juusho { "Yokohama" };
 sub denwa { "124678" };
 sub bank { "三井住友銀行" };
+sub AUTOLOAD { our $AUTOLOAD; "エラー：$AUTOLOADは定義されていない属性です" };
 
 1;
